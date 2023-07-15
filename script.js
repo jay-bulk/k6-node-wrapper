@@ -1,8 +1,7 @@
 import { spawn } from 'child_process'
-import meow from 'meow'
+import fs from 'fs'
 
 const f = JSON.parse(open('./env.json'))
-const meow.ask('What endpoint would you like to call?')
 
 const id = f[0]
 const sec = f[1]
@@ -63,7 +62,10 @@ const apiToken = \`${apiToken}\`
     }) || errorRate.add(1);
 }
 ```
-
+fs.writeFile('script2.js', echo, (err) => {
+  if (err) throw err
+  else console.log('Running script2.js')
+})
 
 const child = spawn('k6 run', ['--vus 10', 'script2.js'])
 
