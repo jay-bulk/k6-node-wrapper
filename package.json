@@ -1,0 +1,29 @@
+{
+  "name": "load_tester",
+  "version": "1.0.0",
+  "description": "k6 node wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jay-bulk/k6-node-wrapper"
+  },
+  "keywords": [
+    "load_test"
+  ],
+  "author": "@jay-bulk",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jay-bulk/k6-node-wrapper/issues"
+  },
+  "homepage": "https://github.com/jay-bulk/k6-node-wrapper#readme",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "meow": "^12.0.1",
+    "resolve-from": "^5.0.0"
+  },
+  "module": "esm"
+}
